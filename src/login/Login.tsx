@@ -16,7 +16,7 @@ const Login = (props: any) => {
         hidden.style.backgroundColor = "red";
         hidden.style.color = "white";
         hidden.style.display = "block";
-        hidden.innerHTML = "Bạn nhập sai rồi";
+        hidden.innerHTML = "Sai tài khoản hoặc mật khẩu";
       }
     } else {
       if (result == "short") {
@@ -55,6 +55,9 @@ const Login = (props: any) => {
     } else {
       if (formValues.user === "" || formValues.pass === "") {
         setResult("short");
+        if ((formValues.user === "" && formValues.pass === "")) {
+          
+        }
       } else {
         console.log("false");
         setResult("false");
@@ -73,10 +76,6 @@ const Login = (props: any) => {
         <div className="login-box-body">
           <p className="login-box-msg">Sign in to start your session</p>
           <Form onSubmit={handleTodoFormSubmit} />
-          <div className="alert alert-primary" role="alert" id="alert-login">
-            Bạn nhập sai rồi
-          </div>
-
           <div className="social-auth-links text-center">
             <p>- OR -</p>
             <a
@@ -98,7 +97,10 @@ const Login = (props: any) => {
           <a href="register.html" className="text-center">
             Register a new membership
           </a>
-        </div>
+      </div>
+      
+      <div className="alert alert-primary" role="alert" id="alert-login"/>
+      
       </div>
       
   );

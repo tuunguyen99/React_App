@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
 const Form = (props: any) => {
-  function handleValueChange(e: any) {
+  const handleValueChange = (e: any)=> {
     setValue({ ...value, [e.target.name]: e.target.value });
   }
 
-  function handleSubmit(e: any) {
+  const handleSubmit = (e: any) => {
     // Prevent reloading browser
     e.preventDefault();
     if (!onSubmit) return;
@@ -15,9 +15,9 @@ const Form = (props: any) => {
       pass: value.pass,
     };
     onSubmit(formValues);
-    console.log(e.target.name);
+    console.log(e.target.name); 
     // Reset form
-    setValue({ name: "", pass: "" });
+    //setValue({ name: "", pass: "" });
   }
 
   const { onSubmit } = props;
@@ -36,13 +36,13 @@ const Form = (props: any) => {
         </div>
         <div className="row">
           <div className="col-xs-8">
-            <div className = "checkbox">
-            <div className="checkbox icheck">
-              <label>
+            
+            <div className="checkbox">
+              <label >
                 <input type="checkbox" /> Remember Me
               </label>
               </div>
-              </div>
+             
           </div>
 
           <div className="col-xs-4">
@@ -60,4 +60,3 @@ const Form = (props: any) => {
 }
 
 export default Form;
-
