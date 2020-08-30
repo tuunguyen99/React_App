@@ -2,7 +2,7 @@ import React from "react";
 import HeaderMess from "./HeaderMess";
 import HeaderNoti from "./HeaderNoti";
 import HeaderTask from "./HeaderTask";
-
+import user from '../img/user2-160x160.jpg';
 const HeaderLayout = ()=> {
   return (
     <header className="main-header">
@@ -40,7 +40,7 @@ const HeaderLayout = ()=> {
             <li className="dropdown user user-menu">
               <a href="#" className="dropdown-toggle" data-toggle="dropdown">
                 <img
-                  src="/dist/img/user2-160x160.jpg"
+                  src={user}
                   className="user-image"
                   alt="User Image"
                 />
@@ -50,7 +50,7 @@ const HeaderLayout = ()=> {
                 {/* User image */}
                 <li className="user-header">
                   <img
-                    src="/dist/img/user2-160x160.jpg"
+                    src={user}
                     className="img-circle"
                     alt="User Image"
                   />

@@ -1,5 +1,5 @@
 import React from "react";
-
+import user from './img/user2-160x160.jpg';
 const SideBar= () => {
   var style = {
     display: "block",
@@ -14,7 +14,7 @@ const SideBar= () => {
         <div className="user-panel">
           <div className="pull-left image">
             <img
-              src="/dist/img/user2-160x160.jpg"
+              src={user}
               className="img-circle"
               alt="User Image"
             />
