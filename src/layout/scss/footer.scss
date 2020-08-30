@@ -1,0 +1,4 @@
+@import 'ex';
+#footer {
+    @include list(100%, 60px, 1px solid yellowgreen);
+}

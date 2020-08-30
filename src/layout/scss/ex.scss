@@ -1,0 +1,5 @@
+@mixin list($a,$b,$c) {
+    width: $a;
+    height: $b;
+    border: $c;
+}
