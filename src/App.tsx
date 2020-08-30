@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Layout from "./layout/Layout";
 import Login from "./login/Login";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Page404 from "./layout/page404";
 
 const App = () => {

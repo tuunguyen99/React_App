@@ -50,7 +50,7 @@ const HeaderLayout = ()=> {
                 {/* User image */}
                 <li className="user-header">
                   <img
-                    src="%PUBLIC_URL%/dist/img/user2-160x160.jpg"
+                    src="/dist/img/user2-160x160.jpg"
                     className="img-circle"
                     alt="User Image"
                   />
